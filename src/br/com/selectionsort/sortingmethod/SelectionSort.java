@@ -9,7 +9,7 @@ public class SelectionSort {
 	// Attributes / Atributos ===================================================
 
 	// Variable for counting position comparisons in the vector.
-	// Vari·vel para contagem de comparaÁıes de posiÁ„o no vetor.
+	// Vari√°vel para contagem de compara√ß√µes de posi√ß√£o no vetor.
 	private int comparisonCount;
 
 	// Constructors / Construtores ==============================================
@@ -34,37 +34,37 @@ public class SelectionSort {
 		this.comparisonCount = comparisonCount;
 	}
 
-	// Methods / MÈtodos ========================================================
+	// Methods / M√©todos ========================================================
 
 	public void sortVector(int[] vector) {
 
 		// Reset zero the variable comparisonCount to a new count of each vector.
-		// Zera a vari·vel comparisonCount para uma nova contagem de cada vetor.
+		// Zera a vari√°vel comparisonCount para uma nova contagem de cada vetor.
 		this.setComparisonCount(0);
 
 		// Loop that runs across the vector.
-		// LaÁo que percorre todo o vetor.
+		// La√ßo que percorre todo o vetor.
 		for (int i = 0; i < vector.length - 1; i++) {
 
 			int smallestElement = i;
 			
 			/*
 			 * Each time the first loop rotates, it does not see the first position and so
-			 * on, because, the smallest element will always be thrown to the end.
+			 * on, because, the smallest element will always be thrown to the start.
 			 * 
-			 * Cada vez que roda o primeiro laÁo, ele n„o enxerga a primeira posiÁ„o e assim
-			 * por diante, devido que, o menor elemento ser· jogado sempre para o comeÁo.
+			 * Cada vez que roda o primeiro la√ßo, ele n√£o enxerga a primeira posi√ß√£o e assim
+			 * por diante, devido que, o menor elemento ser√° jogado sempre para o come√ßo.
 			 */
 			for (int j = i + 1; j < vector.length; j++) {
 				
 				// Add +1 the variable comparisonCount. 
-				// Soma +1 a vari·vel comparisonCount.
+				// Soma +1 a vari√°vel comparisonCount.
 				comparisonCount++;
 
 				/*
 				 * Check the first position (which for the moment is the smallest element) with the position J, if it is larger, then the smallest element holds the position J.
 				 * 
-				 * Verifica a primeira posiÁ„o (que por enquanto È o menor elemento) com a posiÁ„o J, se for maior, ent„o o menor elemento guarda a posiÁ„o J.
+				 * Verifica a primeira posi√ß√£o (que por enquanto √© o menor elemento) com a posi√ß√£o J, se for maior, ent√£o o menor elemento guarda a posi√ß√£o J.
 				 */
 				if (vector[smallestElement] > vector[j]) {
 					smallestElement = j;
@@ -72,7 +72,7 @@ public class SelectionSort {
 
 			} 
 			// Make the position change of the smallest element with the first position of the current loop.
-			// Faz a troca de posiÁ„o do menor elemento com a primeira posiÁ„o do atual laÁo.
+			// Faz a troca de posi√ß√£o do menor elemento com a primeira posi√ß√£o do atual la√ßo.
 			int swap = vector[smallestElement];
 			vector[smallestElement] = vector[i];
 			vector[i] = swap;
