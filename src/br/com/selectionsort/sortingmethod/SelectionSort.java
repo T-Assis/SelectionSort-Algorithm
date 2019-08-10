@@ -2,7 +2,7 @@ package br.com.selectionsort.sortingmethod;
 
 /**
  *
- * @author Thales Lima de Assis (T-Assis - https://github.com/T-Assis)
+ * @author Thales Lima de Assis (thales-assis - https://github.com/thales-assis)
  */
 public class SelectionSort {
 
